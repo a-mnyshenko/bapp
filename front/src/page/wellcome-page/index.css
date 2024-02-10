@@ -1,0 +1,35 @@
+.wellcome-page {
+  width: 393px;
+  height: 852px;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.page-background-img {
+  width: 393px;
+  height: 583px;
+  background-image: url("./background.jpg");
+  border-radius: 24px 24px 82px 82px;
+}
+
+.image {
+  position: absolute;
+  left: -13.5em;
+  top: -1em;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.field-button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 60px;
+  z-index: 3;
+}

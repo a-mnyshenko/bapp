@@ -1,0 +1,22 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 100px;
+  align-items: center;
+  gap: 16px;
+}
+
+.heading--white {
+  color: #fff;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.text {
+  font-size: 20px;
+}
