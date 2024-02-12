@@ -4,6 +4,7 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const dotenv = require('dotenv')
+const cors = require('cors');
 
 // const webpack = require('webpack')
 // const webpackDevMiddleware = require('webpack-dev-middleware')
@@ -55,6 +56,7 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -75,7 +77,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(connectLiveReload())
 }
 
-const route = require('./src/route/index.js')
+const route = require('./src/controllers/index.js')
 
 app.use('/', route)
 // catch 404 and forward to error handler

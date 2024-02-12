@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Button({ button, className, onClick }) {
   return (
-    <button disabled={isDisabled} className={`button button--${className}`}>
+    <button className={`button button--${className}`} onClick={onClick}>
       {button}
     </button>
   );
